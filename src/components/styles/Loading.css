@@ -62,19 +62,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: wrapPulse 2.5s ease-in-out infinite;
 }
 
-@keyframes wrapPulse {
-  0%, 100% {
-    box-shadow: 0 0 0 0 rgba(45, 212, 191, 0),
-                0px 15px 15px 0px rgba(0, 0, 0, 0.2);
-  }
-  50% {
-    box-shadow: 0 0 0 12px rgba(45, 212, 191, 0.15),
-                0 0 30px 6px rgba(45, 212, 191, 0.2),
-                0px 15px 15px 0px rgba(0, 0, 0, 0.2);
-  }
+/* Hide the hover blob */
+.loading-hover {
+  display: none;
 }
 
 .loading-clicked {
@@ -85,7 +77,7 @@
   border-radius: 5000px;
   min-height: calc(100vh + 500px);
   box-shadow: none;
-  animation: none;
+  background-color: #0a0e17;
 }
 
 .loading-clicked .loading-button {
@@ -106,10 +98,8 @@
   transition: opacity 500ms;
 }
 
-.loading-wrap:hover .loading-hover {
-  opacity: 1;
-}
-
+/* hover blob hidden — was causing double gradient */
+.loading-wrap:hover .loading-hover,
 .loading-clicked:hover .loading-hover,
 .loading-clicked .loading-hover {
   opacity: 0;
