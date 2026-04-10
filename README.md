@@ -1,175 +1,103 @@
-# 3D Portfolio Website
+# Sarthak Bhandari — 3D Portfolio
 
-This repository contains the source code for a personal 3D portfolio built with React, TypeScript, Three.js, React Three Fiber, and GSAP. It includes animated page sections, a character scene, custom cursor interactions, and smooth transitions designed for a modern portfolio experience.
+Personal portfolio website built with React, TypeScript, Three.js, and GSAP. Features a 3D animated character scene, scroll-driven animations, interactive skill sections, and a clean project showcase.
 
-Live site: [https://akashrmalhotra.netlify.app/](https://akashrmalhotra.netlify.app/)
+Live site: [https://github.com/sarthak0105/Sarthak-Bhandari-Portfolio](https://github.com/sarthak0105/Sarthak-Bhandari-Portfolio)
 
 ![Portfolio Preview](public/images/preview1.png)
 
-## Table of Contents
+## About
 
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Available Scripts](#available-scripts)
-- [GSAP License Note](#gsap-license-note)
-- [Customization Guide](#customization-guide)
-- [Troubleshooting](#troubleshooting)
-- [Deployment](#deployment)
-- [License](#license)
+I'm a Computer Science & Business Systems student who builds things that matter. From AI-powered platforms like MindSync and VOX-AI to deployment tools like DeployZen, I work across the full stack — UI/UX, frontend, backend, and ML — with a sharp focus on clean design and measurable impact.
 
-## Features
+- LinkedIn: [linkedin.com/in/sarthak-suhas-bhandari](https://www.linkedin.com/in/sarthak-suhas-bhandari)
+- GitHub: [github.com/sarthak0105](https://github.com/sarthak0105)
+- Email: sarthakbhandarisb0105@gmail.com
 
-- Responsive one-page portfolio layout with reusable section components.
-- 3D character scene rendering powered by React Three Fiber and Three.js.
-- GSAP-powered animations and transitions for interactive storytelling.
-- Custom cursor, hover interactions, and scroll-driven visual effects.
-- Organized component architecture with dedicated utilities and style modules.
+## Projects Featured
+
+- **MindSync** — Full-stack RAG platform (Next.js, FastAPI, NVIDIA NIM, pgvector, Gemini) — [docu-rag-pink.vercel.app](https://docu-rag-pink.vercel.app)
+- **VOX-AI** — AI-powered debate analysis platform (Next.js, Gemini API) — [vox-ai.vercel.app](https://vox-ai.vercel.app)
+- **DeployZen** — Lightweight ML deployment platform (ONNX Runtime) — [deploy-zen-five.vercel.app](https://deploy-zen-five.vercel.app)
 
 ## Tech Stack
 
 ### Core
+- React 18 + TypeScript + Vite
 
-- React 18
-- TypeScript
-- Vite
+### 3D & Animation
+- Three.js, `@react-three/fiber`, `@react-three/drei`, `@react-three/rapier`
+- GSAP + ScrollTrigger + ScrollSmoother + SplitText
 
-### Animation and 3D
+### Supporting
+- `react-icons`, `react-fast-marquee`, `@vercel/analytics`
 
-- GSAP + `@gsap/react`
-- Three.js
-- `@react-three/fiber`
-- `@react-three/drei`
-- `@react-three/postprocessing`
-- `@react-three/cannon`
-- `@react-three/rapier`
+## Skills
 
-### Supporting Libraries
+- **Languages**: C, Python, JavaScript, SQL, HTML5, CSS3
+- **Frontend**: React.js, Next.js, Bootstrap
+- **Backend**: Node.js, Flask, REST APIs, Docker, ONNX Runtime
+- **AI/ML**: Gemini API, LLaMA AI, ResNet, Pandas, NumPy
+- **Databases**: MongoDB, MySQL
+- **UI/UX**: Figma, Adobe Illustrator
 
-- `react-icons`
-- `react-fast-marquee`
-- `@vercel/analytics`
+## Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/sarthak0105/Sarthak-Bhandari-Portfolio.git
+cd Sarthak-Bhandari-Portfolio
+
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+```
+
+Open `http://localhost:5173` in your browser.
+
+## Available Scripts
+
+- `npm run dev` — Start development server
+- `npm run build` — Build for production
+- `npm run preview` — Preview production build
+- `npm run lint` — Run ESLint
 
 ## Project Structure
 
 ```text
 .
-├── public/                    # Static assets
+├── public/                    # Static assets (images, models, resume)
 ├── src/
-│   ├── assets/                # Local media/assets
 │   ├── components/
-│   │   ├── Character/         # 3D scene + character logic/utilities
-│   │   ├── styles/            # Section/component CSS files
+│   │   ├── Character/         # 3D scene + character logic
+│   │   ├── styles/            # Component CSS files
 │   │   ├── About.tsx
-│   │   ├── Career.tsx
+│   │   ├── Skills.tsx
 │   │   ├── Contact.tsx
 │   │   ├── Landing.tsx
-│   │   ├── MainContainer.tsx  # Main page composition
+│   │   ├── MainContainer.tsx
 │   │   ├── Navbar.tsx
 │   │   ├── TechStack.tsx
 │   │   ├── WhatIDo.tsx
 │   │   └── Work.tsx
-│   ├── context/               # Global providers (loading state, etc.)
-│   ├── data/                  # Static data/content definitions
+│   ├── context/               # Loading state provider
+│   ├── data/                  # Static data definitions
 │   ├── App.tsx
 │   └── main.tsx
 ├── package.json
 └── vite.config.ts
 ```
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+ (recommended)
-- npm 9+ (or compatible)
-
-### Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone <your-repository-url>
-   cd 3d-portfolio
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Start the local development server:
-
-   ```bash
-   npm run dev
-   ```
-
-4. Open the URL shown in the terminal (typically `http://localhost:5173`).
-
-## Available Scripts
-
-- `npm run dev`  
-  Starts Vite dev server and exposes host for local network testing.
-
-- `npm run build`  
-  Type-checks and builds a production-ready bundle.
-
-- `npm run preview`  
-  Serves the production build locally for verification.
-
-- `npm run lint`  
-  Runs ESLint checks across the project.
-
-## GSAP License Note
-
-This project uses the standard `gsap` package, including bonus plugins now available in the core package.
-
-- Install dependencies with `npm install`.
-- If migrating from older setups, remove `gsap-trial` from your project.
-
-Read official installation guidance here: [GSAP Installation Docs](https://gsap.com/docs/v3/Installation/)
-
-## Customization Guide
-
-You can adapt this portfolio to your own profile by updating the following areas:
-
-- **Content sections**: Edit files in `src/components/` such as `About.tsx`, `Career.tsx`, `WhatIDo.tsx`, and `Work.tsx`.
-- **Data source**: Update static values in files under `src/data/`.
-- **Styling**: Modify component styles in `src/components/styles/` and global styles in `src/index.css` / `src/App.css`.
-- **3D scene behavior**: Adjust scene logic in `src/components/Character/` and related utilities.
-- **Animations**: Tweak GSAP utilities under `src/components/utils/`.
-
-## Troubleshooting
-
-- **Blank screen in development**  
-  Check browser console for module import errors and verify all dependencies are installed.
-
-- **3D performance issues on low-end devices**  
-  Reduce scene complexity and post-processing effects in the character/scene utilities.
-
-- **GSAP plugin errors**  
-  Ensure you have the correct plugin package and license configuration for your target environment.
-
-- **TypeScript build failures**  
-  Run `npm run build` and address reported type errors before deploying.
-
 ## Deployment
 
-1. Create a production build:
+```bash
+npm run build
+npm run preview
+```
 
-   ```bash
-   npm run build
-   ```
-
-2. Validate locally:
-
-   ```bash
-   npm run preview
-   ```
-
-3. Deploy the generated `dist/` folder to your hosting provider (for example Vercel, Netlify, or Cloudflare Pages).
+Deploy the `dist/` folder to Vercel, Netlify, or Cloudflare Pages.
 
 ## License
 
