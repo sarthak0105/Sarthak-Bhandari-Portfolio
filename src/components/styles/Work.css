@@ -151,12 +151,47 @@
   right: -70px;
 }
 
+/* ── Mobile nav row (arrows + dots together) ── */
+.carousel-mobile-nav {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.carousel-arrow-mobile {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  color: #eae5ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.carousel-arrow-mobile:hover {
+  background: rgba(94, 234, 212, 0.15);
+  border-color: var(--accentColor);
+  color: var(--accentColor);
+}
+
 /* ── Dot Indicators ── */
 .carousel-dots {
   display: flex;
   justify-content: center;
   gap: 12px;
   margin-top: 35px;
+}
+
+.carousel-dots-desktop {
+  display: flex;
 }
 
 .carousel-dot {
@@ -367,16 +402,11 @@
 
   .carousel-details h4 {
     font-size: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
   .carousel-category,
   .carousel-tools p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 14px;
   }
 
   .work-image img {
@@ -384,25 +414,20 @@
     height: 220px;
   }
 
-  /* Arrows below carousel, centered */
+  /* Hide desktop arrows, show mobile nav */
   .carousel-arrow {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
-    top: auto;
-    bottom: -60px;
-    transform: none;
+    display: none;
   }
 
-  .carousel-arrow-left {
-    left: calc(50% - 55px);
+  .carousel-dots-desktop {
+    display: none;
   }
 
-  .carousel-arrow-right {
-    right: calc(50% - 55px);
+  .carousel-mobile-nav {
+    display: flex;
   }
 
-  .carousel-dots {
-    margin-top: 75px;
+  .carousel-mobile-nav .carousel-dots {
+    margin-top: 0;
   }
 }
