@@ -2,7 +2,7 @@
 
 Personal portfolio website built with React, TypeScript, Three.js, and GSAP. Features a 3D animated character scene, scroll-driven animations, interactive skill sections, and a clean project showcase.
 
-Live site: [https://github.com/sarthak0105/Sarthak-Bhandari-Portfolio](https://github.com/sarthak0105/Sarthak-Bhandari-Portfolio)
+Live site: [Sarthak-Bhandari-Portfolio](https://sarthak-bhandari-portfolio.vercel.app/)
 
 ![Portfolio Preview](public/images/preview1.png)
 
