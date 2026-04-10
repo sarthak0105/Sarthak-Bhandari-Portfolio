@@ -338,4 +338,33 @@
     max-height: 220px;
     height: 220px;
   }
+
+  .carousel-arrow-left {
+    left: 0;
+  }
+
+  .carousel-arrow-right {
+    right: 0;
+  }
+
+  .carousel-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    top: auto;
+    bottom: -55px;
+    transform: none;
+  }
+
+  .carousel-arrow-left {
+    left: calc(50% - 50px);
+  }
+
+  .carousel-arrow-right {
+    right: calc(50% - 50px);
+  }
+
+  .carousel-dots {
+    margin-top: 70px;
+  }
 }

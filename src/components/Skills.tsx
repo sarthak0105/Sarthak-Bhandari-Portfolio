@@ -116,8 +116,9 @@ const Skills = () => {
     };
   }, []);
 
-  // Scroll stagger reveal
+  // Scroll stagger reveal — desktop only
   useEffect(() => {
+    if (window.innerWidth < 768) return;
     rowRefs.current.forEach((row, i) => {
       if (!row) return;
       gsap.fromTo(

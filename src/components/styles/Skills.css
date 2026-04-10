@@ -55,7 +55,7 @@
   gap: 30px;
   padding: 22px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-  opacity: 0;
+  opacity: 1;
   will-change: transform, opacity;
   transition: background 0.3s ease, box-shadow 0.3s ease;
   border-radius: 8px;
@@ -164,8 +164,16 @@
 }
 
 @media only screen and (max-width: 550px) {
+  .skills-section {
+    padding: 60px 0;
+  }
+
   .skills-title {
-    font-size: 38px;
+    font-size: 36px;
+  }
+
+  .skills-header {
+    margin-bottom: 30px;
   }
 
   .skills-row {
@@ -177,6 +185,18 @@
 
   .skills-category {
     min-width: unset;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .skill-flip-front,
+  .skill-flip-back {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  .skills-tags {
+    gap: 6px;
   }
 }
 
