@@ -291,6 +291,7 @@
 
   .carousel-image-wrapper {
     width: 100%;
+    max-width: 100%;
   }
 
   .carousel-arrow {
@@ -318,20 +319,64 @@
     margin-bottom: 30px;
   }
 
+  .work-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-track-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-slide {
+    min-width: 100%;
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .carousel-content {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-info {
+    width: 100%;
+    overflow: hidden;
+  }
+
   .carousel-number h3 {
     font-size: 35px;
   }
 
+  .carousel-details {
+    overflow: hidden;
+    min-width: 0;
+  }
+
   .carousel-details h4 {
     font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  .carousel-content {
-    gap: 20px;
-  }
-
-  .carousel-slide {
-    padding: 30px 0;
+  .carousel-category,
+  .carousel-tools p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .work-image img {
@@ -339,32 +384,25 @@
     height: 220px;
   }
 
-  .carousel-arrow-left {
-    left: 0;
-  }
-
-  .carousel-arrow-right {
-    right: 0;
-  }
-
+  /* Arrows below carousel, centered */
   .carousel-arrow {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     font-size: 16px;
     top: auto;
-    bottom: -55px;
+    bottom: -60px;
     transform: none;
   }
 
   .carousel-arrow-left {
-    left: calc(50% - 50px);
+    left: calc(50% - 55px);
   }
 
   .carousel-arrow-right {
-    right: calc(50% - 50px);
+    right: calc(50% - 55px);
   }
 
   .carousel-dots {
-    margin-top: 70px;
+    margin-top: 75px;
   }
 }
