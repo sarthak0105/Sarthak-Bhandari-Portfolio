@@ -16,7 +16,7 @@ const projects = [
     category: "AI-Powered Debate Analysis Platform",
     tools: "Next.js, Gemini API, Sentiment Analysis, NLP",
     image: "/images/Screenshot 2026-04-10 193446.png",
-    link: "https://vox-ai.vercel.app",
+    link: "https://vox-ai-nu.vercel.app/",
   },
   {
     title: "DeployZen",
