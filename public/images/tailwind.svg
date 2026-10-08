@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bgTailwind" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0f2b38"/>
+      <stop offset="100%" stop-color="#07131a"/>
+    </radialGradient>
+    <linearGradient id="twGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="140" fill="url(#bgTailwind)"/>
+  <rect width="508" height="508" x="2" y="2" rx="138" fill="none" stroke="#38bdf835" stroke-width="3"/>
+  <path d="M256 182 C226 142 186 132 136 152 C96 168 76 208 86 248 C106 218 136 208 176 218 C206 226 226 256 246 286 C276 326 316 336 366 316 C406 300 426 260 416 220 C396 250 366 260 326 250 C296 242 276 212 256 182 Z M376 112 C346 72 306 62 256 82 C216 98 196 138 206 178 C226 148 256 138 296 148 C326 156 346 186 366 216 C396 256 436 266 486 246 C526 230 546 190 536 150 C516 180 486 190 446 180 C416 172 396 142 376 112 Z" transform="matrix(0.7 0 0 0.7 50 80)" fill="url(#twGrad)"/>
+</svg>
