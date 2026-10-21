@@ -117,8 +117,8 @@ export function setCharTimeline(
       tl3
         .fromTo(
           ".character-model",
-          { y: "0%" },
-          { y: "-100%", duration: 4, ease: "none", delay: 1 },
+          { y: "0%", x: "-12%" },
+          { y: "-100%", x: "-12%", duration: 4, ease: "none", delay: 1 },
           0
         )
         .fromTo(".whatIDO", { y: 0 }, { y: "15%", duration: 2 }, 0)

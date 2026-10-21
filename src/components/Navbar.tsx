@@ -26,10 +26,20 @@ const Navbar = () => {
     links.forEach((elem) => {
       let element = elem as HTMLAnchorElement;
       element.addEventListener("click", (e) => {
+        let elem = e.currentTarget as HTMLAnchorElement;
+        let section = elem.getAttribute("data-href");
+        if (section === "#work") {
+          window.dispatchEvent(
+            new CustomEvent("portfolio-tab-change", { detail: "uiux" })
+          );
+        } else if (section === "#graphic-design") {
+          window.dispatchEvent(
+            new CustomEvent("portfolio-tab-change", { detail: "graphic" })
+          );
+          section = "#work";
+        }
         if (window.innerWidth > 1024) {
           e.preventDefault();
-          let elem = e.currentTarget as HTMLAnchorElement;
-          let section = elem.getAttribute("data-href");
           smoother.scrollTo(section, true, "top top");
         }
       });
@@ -60,7 +70,12 @@ const Navbar = () => {
           </li>
           <li>
             <a data-href="#work" href="#work">
-              <HoverLinks text="WORK" />
+              <HoverLinks text="UI/UX WORK" />
+            </a>
+          </li>
+          <li>
+            <a data-href="#graphic-design" href="#graphic-design">
+              <HoverLinks text="GRAPHIC DESIGN" />
             </a>
           </li>
           <li>

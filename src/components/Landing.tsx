@@ -22,7 +22,7 @@ const Landing = ({ children }: PropsWithChildren) => {
               <div className="landing-h2-info">Designer</div>
             </h2>
             <p className="landing-tagline">
-              Designing clean, intuitive, and user-centered digital experiences.
+              UI/UX Designer crafting intuitive digital experiences and visually compelling designs.
             </p>
           </div>
         </div>

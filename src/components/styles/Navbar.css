@@ -13,22 +13,23 @@
   z-index: 9999;
 }
 .header ul {
-  font-size: 12px;
+  font-size: 11px;
   display: flex;
   flex-direction: row;
   margin: 0;
   padding: 0;
   list-style: none;
-  column-gap: 20px;
+  column-gap: 14px;
   row-gap: 4px;
   align-items: center;
 }
 .header ul li {
   margin-left: 0px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: #ccc;
   font-weight: 600;
   cursor: pointer;
+  white-space: nowrap;
 }
 .navbar-connect {
   position: absolute;
@@ -52,10 +53,12 @@
   .header ul {
     flex-direction: row;
     align-items: center;
-    font-size: 14px;
+    font-size: 13px;
+    column-gap: 20px;
   }
   .header ul li {
     color: #eae5ec;
+    letter-spacing: 0.8px;
   }
   .navbar-title {
     font-size: 16px;
@@ -65,14 +68,17 @@
   .navbar-connect {
     display: block;
   }
+  .header ul {
+    column-gap: 24px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .header {
     padding: 35px 0px;
   }
   .header ul {
-    column-gap: 80px;
-    font-size: 16px;
+    column-gap: 36px;
+    font-size: 15px;
   }
   .navbar-connect {
     font-size: 16px;

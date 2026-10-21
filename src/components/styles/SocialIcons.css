@@ -6,6 +6,13 @@
   z-index: 99;
   left: 50%;
   transform: translateX(-50%);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+body.hide-fixed-socials .icons-section {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
 }
 .social-icons {
   position: absolute;
